@@ -54,9 +54,11 @@ public class NewReplyController extends HttpServlet {
            r.setReply_to_reply_id(reply_to_reply_id);
            if(ReplyDAO.insert(r)!=1){
                response.sendRedirect("error.jsp");
+               return;
            }
            
            response.sendRedirect("topic?tid="+tid);
+           return;
            //RequestDispatcher rd = request.getRequestDispatcher("topic?tid="+tid);
             //rd.forward(request,response);
         } finally {

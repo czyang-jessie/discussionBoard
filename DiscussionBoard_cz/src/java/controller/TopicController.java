@@ -62,6 +62,7 @@ public class TopicController extends HttpServlet {
              request.setAttribute("pid",pid);
             RequestDispatcher rd = request.getRequestDispatcher("topics.jsp");
             rd.forward(request, response);
+            return;
         } finally {
             out.close();
         }

@@ -49,8 +49,10 @@ public class NewTopicController extends HttpServlet {
            
            if(TopicDAO.insert(t)!=1){
                response.sendRedirect("error.jsp");
+               return;
            }
             response.sendRedirect("topics?pid="+pid);
+            return;
         } finally {
             out.close();
         }

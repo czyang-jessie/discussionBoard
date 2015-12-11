@@ -50,6 +50,7 @@ public class ProjectController extends HttpServlet {
                 request.setAttribute("errorList", errorList);
                 RequestDispatcher rd = request.getRequestDispatcher("dashboard.jsp");
                 rd.forward(request, response);
+                return;
                 
             }else{
                 request.setAttribute("dates",dates);
@@ -58,7 +59,7 @@ public class ProjectController extends HttpServlet {
                 request.setAttribute("errorList", errorList);
                 RequestDispatcher rd = request.getRequestDispatcher("dashboard.jsp");
                 rd.forward(request, response);
-                
+                return;
             }
         } finally {
             out.close();

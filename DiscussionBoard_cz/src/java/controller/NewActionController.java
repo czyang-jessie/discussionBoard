@@ -60,6 +60,7 @@ public class NewActionController extends HttpServlet {
            }
            
            response.sendRedirect("topic?tid="+tid);
+           return;
         } finally {
             out.close();
         }

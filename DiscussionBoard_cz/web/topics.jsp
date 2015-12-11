@@ -30,7 +30,10 @@
         <h1 class="page-header">
            Topics
            <button class="btn btn-primary " data-toggle="modal" data-target="#newTopicModal"><i class="fa fa-plus"></i>&nbsp;New Post</button>
+           <h4>Press the "Project Discussion Board" on nav bar to get back to home page.</h3>
+           <hr>
         </h1>
+        
         <table id="topicTable" name="topicTable" class="table forum table-striped">
                 <thead>
                 <tr>

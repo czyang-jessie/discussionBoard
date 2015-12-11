@@ -68,6 +68,7 @@ public class TopicDetailController extends HttpServlet {
              request.setAttribute("subReplies", subReplies);
             RequestDispatcher rd = request.getRequestDispatcher("topicDetail.jsp");
             rd.forward(request, response);
+            return;
         } finally {
             out.close();
         }
