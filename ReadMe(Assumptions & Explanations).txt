@@ -11,6 +11,7 @@ Assumptions:
 3.Popularity of the topic = #of Likes+ #of Replies -#of dislikes
 4.Popularity of replies = #of Likes- #of dislikes
 5.Pending:proper informational message to user.(Like wrong password, system error and so on)
+6.The system time of the deployed version may differ since Database Host is not in Singapore.
 
 Extra function achieved:
 1.Sort Topics by title, #of likes/dislikes, popularity
